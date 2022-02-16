@@ -1,25 +1,5 @@
-.header {
-    grid-area: header;
-}
-
-.main {
-    grid-area: main;
-}
-
-
-.recipeGrid {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: 
-        "header header header"
-        "main main main";
-}
-
-
-
 @media only screen and (max-width: 780px) {
-        #recipeGrid {
-            display: grid;
+        h2 {
+            color: red;
         }
 }

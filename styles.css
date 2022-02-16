@@ -1,8 +1,17 @@
+.header {
+    grid-area: header;
+}
+
+.main {
+    grid-area: main;
+}
+
+
 #recipeGrid {
     display: grid;
     grid-template-areas: 
         "header header header"
-        "ul ol p";
+        "main main main";
 }
 
 

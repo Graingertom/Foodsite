@@ -1,0 +1,14 @@
+#recipeGrid {
+    display: grid;
+    grid-template-areas: 
+        "header header header"
+        "ul ol p";
+}
+
+
+
+@media only screen and (max-width: 780px) {
+        #recipeGrid {
+            display: grid;
+        }
+}

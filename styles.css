@@ -1,12 +1,79 @@
-@import url('https://fonts.googleapis.com/css2?family=Shizuru&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@700&display=swap');
+
+body {
+    background-color: palegoldenrod;
+}
+
+h1 {
+    font-family: 'Fuzzy Bubbles', cursive;
+    color: red;
+    padding-top: 10px;
+}
+
+h2 {
+    font-family: 'Fuzzy Bubbles', cursive;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 30vw;
+    object-fit: cover;
+}
+
+.wrapper {
+    display: grid;
+    justify-content: center;
+    column-gap: 20px;
+    width: 80%;
+    height: 80%;
+    grid-template-areas: "one two three"
+                        "bodyOne bodyTwo bodyThree";
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+}
+
+.headerOne {
+    grid-area: one;
+}
+
+.headerTwo {
+    grid-area: two;
+}
+
+.headerThree {
+    grid-area: three;
+}
+
+.bodyOne {
+    grid-area: bodyOne;
+}
+
+.bodyTwo {
+    grid-area: bodyTwo;
+}
+
+.bodyThree {
+    grid-area: bodyThree;
+}
+
 
 @media only screen and (max-width: 780px) {
         h2 {
             color: red;
         }
-}
 
-h1 {
-    font-family: 'Shizuru';
-    color: red;
+        body .wrapper {
+            display: grid;
+            justify-content: center;
+            column-gap: 0px;
+            width: 80%;
+            height: 80%;
+            grid-template-areas: "one" "bodyOne" "two" "bodyTwo" "three" "bodyThree";
+            grid-template-rows: auto;
+        }
 }
